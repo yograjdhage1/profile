@@ -69,7 +69,8 @@ body {
 	font-family: "lora-regular", serif;
 	font-size: 1.7rem;
 	line-height: 3rem;
-	color: #6e6e6e;
+	/* color: #6e6e6e; */
+	color: #8b8585;
 }
 
 /**
@@ -95,7 +96,7 @@ a:hover, a:focus, a:active {
  *
  * ------------------------------------------------------------------- 
  */
-h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
+h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06, .linkcolor {
 	font-family: "poppins-semibold", sans-serif;
 	color: #313131;
 	font-style: normal;
@@ -2493,9 +2494,9 @@ footer a, footer a:visited {
 footer a:hover, footer a:focus {
 	color: #FEA116;
 }
-footer .row {
+/* footer .row {
 	max-width: 900px;
-}
+} */
 footer .social {
 	text-align: right;
 }
