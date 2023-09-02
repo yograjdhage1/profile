@@ -598,6 +598,9 @@ textarea {
 		margin-left: 0;
 		margin-right: 0;
 		padding: 0;
+		/****added for mobile view *****/
+		overflow: auto;
+    	height: 420px;
 	}
 
 	[class*="col-"] + [class*="col-"].end {
