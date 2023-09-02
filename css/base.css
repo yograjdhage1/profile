@@ -395,7 +395,7 @@ textarea {
 .row:before,
 .row:after {
 	content: "";
-	display: table;
+	/* display: table; */
 }
 
 .row:after {
