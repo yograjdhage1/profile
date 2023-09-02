@@ -586,7 +586,7 @@ textarea {
 @media screen and (max-width:400px) {
 	.profilecontent{
 		overflow: auto;
-    	height: 420px;
+    	height: 400px;
 	}
 }
 @media screen and (max-width:400px) {
