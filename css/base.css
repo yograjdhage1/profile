@@ -584,6 +584,12 @@ textarea {
  * --------------------------------------------------------------- 
  */
 @media screen and (max-width:400px) {
+	.profilecontent{
+		overflow: auto;
+    	height: 420px;
+	}
+}
+@media screen and (max-width:400px) {
 	.row .row {
 		padding-left: 0;
 		padding-right: 0;
@@ -599,8 +605,7 @@ textarea {
 		margin-right: 0;
 		padding: 0;
 		/****added for mobile view *****/
-		overflow: auto;
-    	height: 420px;
+		
 	}
 
 	[class*="col-"] + [class*="col-"].end {
