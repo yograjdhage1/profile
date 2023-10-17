@@ -1,0 +1,1348 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body,html{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-image: url('../images/body_bg.png');
+    background-repeat: repeat;
+    background-size: 100% 100%;   
+    
+}
+body{
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h6{
+    font-size: 25px;
+}
+
+/***********Font face css **********/
+@font-face {
+    font-family: 'Akkurat_Bold_Pro';
+    src: url('../fonts/AkkuratPro-Bold.eot');
+    src: url('../fonts/AkkuratPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AkkuratPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Akkurat_Light_Pro';
+    src: url('../fonts/AkkuratLightPro.eot');
+    src: url('../fonts/AkkuratLightPro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AkkuratLightPro.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Migra_Bold';
+    src: url('../fonts/Migra-Extrabold.eot');
+    src: url('../fonts/Migra-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Migra-Extrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Migra_ExtraboldItalic';
+    src: url('../fonts/MigraItalic-ExtraboldItalic.eot');
+    src: url('../fonts/MigraItalic-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MigraItalic-ExtraboldItalic.woff') format('woff'),
+        url('../fonts/MigraItalic-ExtraboldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+/***********Font face css **********/
+
+
+/************ Css Custom Variabls ***************/
+$mt:45px;
+$mb:45px;
+$m0:0px;
+
+
+/********** Comman mixin ************/
+
+@mixin commanm {
+    width: 65%;
+    height: auto;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+
+/******** Heading mixins********/
+@mixin heading {
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 0 35px 0;
+    padding: 0;
+    line-height: 40px;
+  }
+
+ @mixin heading_small{
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0px;
+    padding: 0;
+    line-height: 21px;
+ } 
+
+/******** Paragrapha mixins********/
+@mixin para {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+  }
+
+
+
+.container_fluid{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 0 0 0;
+}
+.container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 0 0 0;
+    margin: 0 auto;
+}
+
+
+.reponsive_img{
+    width: 100%;
+    height: auto;
+}
+
+.color_white{
+    color: #fff;
+    
+    &.headtxt{
+        font-size: 26px!important;
+    }
+}
+
+.space_beetw{
+ justify-content: space-between;
+}
+.padding_big{
+    padding: 110px;
+}
+
+.padding_botm{
+    padding-bottom: 80px;
+}
+
+/********* Header Section ************/
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+
+    .hero{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+
+        .slide-show-container {
+            height: 100%;
+            width: 100%;
+            position: relative;
+          }
+
+        /* CSS Styles in common for all slides */
+        .wrapper-one,
+        .wrapper-two,
+        .wrapper-three {
+            background-color: #eee;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+          /* CSS Styles for each slide */
+        .wrapper-one {
+            background-image: url("../images/slider1.png");
+            background-size: cover;
+            background-position: center;
+
+            .classpass_svg{
+                background-image: url("../images/classpass_svg.svg"); 
+                width: 432px;
+                height: 84px;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
+        .wrapper-two {
+            background-image: url("../images/slider2.png");
+            animation: slideTwoAnim 20s infinite; 
+            background-size: cover;
+            background-position: center;
+
+            .calm-logo{
+                background-image: url("../images/calm-logo.png"); 
+                top: 666px;
+                left: 568px;
+                width: 331px;
+                height: 364px;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: -390px;
+            }
+        }
+
+        .wrapper-three {
+            background-image: url("../images/slider3.png");
+            animation: slideThreeAnim 20s infinite;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .wrapper-text {
+            font-size: 49px;
+            font-weight: 500;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+
+            img{
+                width: 60px;
+                height: 60px;
+                margin: 5px;
+            }
+            .strach_logo1{
+                width: 260px;
+                height: auto;
+                margin: 5px;
+            }
+
+            .strach_logo{
+                width: 200px;
+                height: auto;
+            }
+
+          }
+        
+    }
+
+/* Animations */
+  @keyframes slideTwoAnim {
+    0%{opacity:0;}
+    17%{opacity:0;}
+    33%{opacity:1;}
+    50%{opacity:1;}
+    67%{opacity:0;}
+    100%{opacity:0;}
+}
+
+@keyframes slideThreeAnim {
+    0%{opacity:0;}
+    50%{opacity:0;}
+    67%{opacity:1;}
+    83%{opacity:1;}
+    100%{opacity:0;}
+}
+    
+
+    .header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        z-index: 9;
+        
+        
+    
+        .logo{
+            padding-top: 20px;
+        }
+    
+        .menu{
+            position: absolute;
+            right: 17px;
+            top: 38px;
+            
+            .bx-menu{
+                font-size: 33px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+/********** Aside Section *************/
+
+.aside{
+    width: 100%;
+    height: auto;
+
+
+   .aside_wrap{
+          @include commanm;
+        
+        h1{
+          @include heading;
+          font-family: 'Akkurat_Bold_Pro';
+          letter-spacing: 5.2px;
+          
+          
+        }
+        p{
+            @include para;
+            font-family: 'Akkurat_Light_Pro';
+        }
+   
+       .text_wrapper{
+         width: 75%;
+         height: auto;
+         margin: 0 auto;
+       } 
+
+    }
+}
+
+
+/********** Article Section *************/
+
+.article{
+    width: 100%;
+    height: auto;
+
+    .article_wrap{
+        @include commanm;
+        
+        h2{
+            @include heading;
+            font-family: 'Akkurat_Bold_Pro';
+            letter-spacing: 5.2px;
+
+        }
+        p{
+            @include para;
+            font-family: 'Akkurat_Light_Pro';
+        }
+    }
+
+    .three_col_img{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 34px;
+    }
+}
+
+/********** challenge Section *************/
+.challenge_section{
+    .mt{
+        margin-top: $mt;
+        margin-bottom: 0;
+    }
+    .two_col_img{
+        width: 100%;
+        height: auto;
+
+        .col1{
+           width: 48%;
+           height: auto;
+           background-color: #e66465;
+        }
+        .space_beetw{
+            justify-content: space-between;
+
+            .col1{
+                display: flex;
+            }
+        }
+    }
+}
+
+/***************** Result *********************/
+.result{
+    .number_wrap{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 35px;
+        
+        .num_box{
+            h4{
+                font-size: 96px;
+                margin: 0;
+                padding: 0;
+                line-height: 36px;
+                color: #3C3C3C;
+                font-family: 'Migra_Bold';
+            }
+        }
+    }
+    .content_sec{
+       @include commanm;
+       p{
+        @include para;
+        font-family: 'Akkurat_Light_Pro';
+
+       }
+       .m0{
+        margin: $m0;
+    }
+      h6{
+        font-size: 15px;
+        font-weight: 700;
+        color: #000;
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding: 0;
+        line-height: 24px;
+        font-family: 'Akkurat_Bold_Pro';
+        letter-spacing: 3px;
+      }
+    }
+    .pb{
+        padding-bottom: 80px;
+    }
+}
+
+
+/******************* Footer Section ***********************/
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding-bottom: 80px;
+
+    .footer_logo{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    .footer_menu{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+
+        h6{
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0 0 30px 0;
+            padding: 0;
+            font-family: 'Akkurat_Bold_Pro';
+        }
+        .col2{
+            font-size: 16px;
+            color: #3C3C3C;
+            width: 30%;
+            text-align: center;
+
+            p{
+                font-family: 'Akkurat_Light_Pro';
+                font-size: 18px;
+                line-height: 24px;
+            }
+            
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                
+                li{
+                    a{
+                        font-size: 18px;
+                        color: #3C3C3C;
+                        text-decoration: none;
+                        line-height: 26px;
+                        font-family: 'Akkurat_Light_Pro';
+
+                        &:hover{
+                            color: #61DAFB;
+                        }
+                    }
+                }
+            }
+
+            a{
+                font-size: 18px;
+                color: #3C3C3C;
+                line-height: 6px;
+                font-family: 'Akkurat_Light_Pro';
+                text-decoration: none;
+
+                &:hover{
+                    color: #61DAFB;
+                }
+            }
+        }
+    }
+
+}
+
+
+/******************* People Section ***********************/
+
+.peoplepage{
+    width: 100%;
+    height: 13vh;
+}
+.people{
+    h4{
+        font-size: 144px;
+        color: #fff;
+        line-height: initial;
+        margin: 0 0 30px 0;
+        padding: 0;
+        font-family: 'Migra_ExtraboldItalic';
+        letter-spacing: 2.88px;
+    }
+}
+
+/******************* Founder Section ***********************/
+
+.founder_section{
+  width: 100%;
+  height: auto;
+
+  .found_col1{
+    width: 40%;
+    height: auto;
+    display: flex;
+  }
+
+  .found_col2{
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+
+    h3{
+        @include heading;
+        font-family: "Akkurat_Bold_Pro";
+        letter-spacing: 5.2px
+    }
+    h6{
+        @include heading_small;
+        font-family: 'Akkurat_Light_Pro';
+        letter-spacing: 3px;
+    }
+    p{
+        line-height: 32px;
+        margin-top: 0;
+        font-size: 24px;
+        font-weight: 300;
+        font-family: 'Akkurat_Light_Pro';
+        letter-spacing: 1.2px;
+
+    }
+  }
+
+}
+
+/****************** Join US section*********************/
+.form_section{
+    width: 100%;
+    height: auto;
+  
+
+    .form_group{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+     }
+    .text_center{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row_col{
+        width: 47%;
+        height: auto;
+
+       
+
+        h5{
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: 'Akkurat_Bold_Pro';
+            letter-spacing: 4.8px;
+        }
+
+         input {
+            margin:3px 0;
+            padding:15px 10px;
+            width:100%;
+            outline:none;
+            background-color: #fff;
+            border:1px solid #fff;
+            display:inline-block;
+            -webkit-box-sizing:border-box;
+               -moz-box-sizing:border-box;
+                    box-sizing:border-box;
+            -webkit-transition:0.2s ease all;
+               -moz-transition:0.2s ease all;
+                -ms-transition:0.2s ease all;
+                 -o-transition:0.2s ease all;
+                    transition:0.2s ease all;
+        }
+
+        .submit_btn {
+            margin-top: 0.25rem;
+            justify-self: center;
+            background-color: transparent;
+            padding: 1rem 2rem;
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 5.2px;
+            cursor: pointer;
+            border: none;
+            font-family: 'Akkurat_Bold_Pro';
+           
+          }
+          
+          .submit_btn:hover,
+          .submit_btn:active {
+            background-color: #e66465;
+             color: #fff;
+          }
+
+    }
+}
+
+
+
+/*Styling Hamburger */
+
+nav{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: auto;
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 50px;
+        top: 37px;
+        z-index: 2;
+        transition: all 0.7s ease;
+
+        div{
+            width: 30px;
+            height:3px;
+            background: #f2f5f7;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+    }
+
+    .inner_menu{
+        width: 100%;
+        height: auto;
+      
+    }
+}
+
+
+
+
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
+.nav-links{
+    position: fixed;
+    background: #131418;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(50px at 90% -20%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    padding: 0 0.7vw;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nav-links.open{
+    clip-path: circle(1000px at 50% -10%);
+    -webkit-clip-path: circle(1000px at 50% 50%);
+    pointer-events: all;
+}
+.nav-links li{
+    opacity: 0;
+}
+.nav-links li:nth-child(1){
+    transition: all 0.5s ease 0.2s;
+}
+.nav-links li:nth-child(2){
+    transition: all 0.5s ease 0.4s;
+}
+.nav-links li:nth-child(3){
+    transition: all 0.5s ease 0.6s;
+}
+.nav-links li:nth-child(4){
+    transition: all 0.5s ease 0.7s;
+}
+.nav-links li:nth-child(5){
+    transition: all 0.5s ease 0.8s;
+}
+.nav-links li:nth-child(6){
+    transition: all 0.5s ease 0.9s;
+    margin: 0;
+}
+.nav-links li:nth-child(7){
+    transition: all 0.5s ease 1s;
+    margin: 0;
+}
+li.fade{
+    opacity: 1;
+}
+
+
+.nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+    font-size: 80px;
+    color: #fff;
+    line-height: 100px;
+    font-family: 'Migra_ExtraboldItalic';
+    letter-spacing: 1.6px;
+    text-transform: capitalize;
+}
+.nav-links li a:hover {
+    color: #61DAFB;
+}
+.nav-links li {
+    position: relative;
+}
+/* .nav-links li a::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: #61DAFB;
+    position: absolute;
+    transition: all ease-in-out 250ms;
+    margin: 0 auto;
+    top: 59px;
+    left: 0;
+    right: 0;
+}
+.nav-links li a:hover::before{
+    width: 80%;
+} */
+
+
+
+
+
+
+
+/**************** All Media querie Start here  *****************/
+
+
+/***************Most of the Smartphones Mobiles (Portrait)************/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+   
+  
+    .container {
+        width: 90%;
+        padding: 45px 0 0 0;
+       
+    }
+    .padding_botm {
+        padding-bottom: 45px;
+    }
+    .result{
+        .number_wrap {
+            flex-direction: column;
+        }
+    }
+
+    .footer{
+         padding-bottom: 0;
+
+        .footer_menu {
+            flex-direction: column;
+            text-align: center;
+
+            .col2 {
+               margin-bottom: 47px;
+               width: 100%;
+            }
+
+            h6 {
+                margin: 0 0 10px 0;
+                
+            }
+        }
+    }
+
+    .main{
+        .hero{
+            .wrapper-text {
+                line-height: 49px;
+            }
+        }
+    }
+
+    .aside{
+        .aside_wrap {
+            width: 90%;
+
+            .text_wrapper {
+                width: 100%;
+            }
+           
+        }
+
+        
+    }
+
+    .founder_section{
+        .found_col1 {
+            width: 100%;
+         }
+         .order1{
+            order: 2;
+        }
+        .found_col2 {
+            width: 100%;
+        }
+        .order2{
+            order: 1;
+        }
+    }
+
+    .padding_big {
+        padding: 15px;
+    }
+
+    .form_section{
+        .form_group {
+             flex-direction: column;
+             margin-bottom: 0;
+             .row_col{
+                 width: 100%;
+
+                input {
+                    width: 100%;
+                    margin-bottom: 20px;
+                   
+                }
+             }
+        }
+    }
+
+    .result{
+        .content_sec {
+            width: 90%;
+           
+        }
+    }
+    .article {
+        .three_col_img {
+            width: 90%;
+       }
+    }
+    
+  }
+
+/************Low Resolution Tablets, Mobiles (Landscape)***********/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  
+    .article {
+        .article_wrap {
+            h2 {
+                margin: 0 0 5px 0;
+                line-height: 36px;
+            }
+        }
+    }
+
+    .container_fluid {
+       padding: 60px 0 0 0;
+    }
+
+    .container {
+        width: 90%;
+        
+    }
+    .footer{
+        padding-bottom: 0;
+
+       .footer_menu {
+           flex-direction: column;
+           text-align: center;
+
+           .col2 {
+              margin-bottom: 47px;
+              width: 100%;
+           }
+
+           h6 {
+               margin: 0 0 10px 0;
+               
+           }
+       }
+   }
+   .founder_section{
+        .found_col1 {
+            width: 100%;
+        }
+        .found_col2 {
+            width: 100%;
+        }
+    }
+
+    .nav-links{
+        -webkit-clip-path: circle(50px at 90% -14%);
+    }
+
+    
+  }
+
+
+/* ------------------ For iPhone 7+ CSS  ---------------------*/
+@media only screen and (max-device-width: 414px) and (orientation: portrait) {
+    body {
+        overflow-x: hidden;
+    }
+    .people h4 {
+        font-size: 74px;
+    }
+
+    .main {
+        .hero {
+            .wrapper-one {
+                .classpass_svg {
+                    width: 322px;
+                    height: 58px;
+                    background-size: cover;
+                }
+            }
+            .wrapper-text {
+                .strach_logo1 {
+                    width: 152px;
+                    height: auto;
+                    margin: 5px;
+                }
+                .strach_logo {
+                    width: 123px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    
+
+    .nav-links li a {
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+}
+
+/* ------------------ For iPhone 7+ CSS Landscape  ---------------------*/
+
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+    .nav-links li a {
+        font-size: 60px;
+        line-height: 80px;
+    }
+    .main {
+        .hero {
+            .wrapper-one {
+                .classpass_svg {
+                    width: 382px;
+                    height: 74px;
+                    background-size: cover;
+                }
+            }
+            .wrapper-two {
+                .calm-logo {
+                    bottom: -190px;
+                    width: 211px;
+                    height: 184px;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+    .article {
+        .article_wrap {
+            width: 90%;
+        }
+    }
+ }
+
+ 
+    
+
+
+
+/**** Galaxy Note 8******/
+@media only screen and (min-device-width: 360px) and (max-device-width: 906px) and (orientation: landscape) {
+
+}
+
+/* -------------- iPad landscape Media query 1024px ---------------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
+    .footer{
+        padding-bottom: 0;
+
+       .footer_menu {
+           /* flex-direction: column; */
+           text-align: center;
+
+           .col2 {
+              margin-bottom: 47px;
+              width: 30%;
+           }
+
+           h6 {
+               margin: 0 0 10px 0;
+               
+           }
+       }
+   }
+    .main{
+        .hero{
+            .wrapper-two {
+                .calm-logo{
+                    bottom: -570px;
+                }
+            }
+        }
+    } 
+}
+
+/* ------------------ For iPad Portrait CSS  ---------------------*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .footer{
+        padding-bottom: 0;
+
+       .footer_menu {
+           flex-direction: column;
+           text-align: center;
+
+           .col2 {
+              margin-bottom: 47px;
+           }
+
+           h6 {
+               margin: 0 0 10px 0;
+               
+           }
+       }
+   }
+}
+
+/* ------------------ For iPhone X CSS Landscape  ---------------------*/
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation : landscape) {
+        .main {
+            .hero {
+                .wrapper-one {
+                    .classpass_svg {
+                        width: 382px;
+                        height: 74px;
+                        background-size: cover;
+                    }
+                }
+                .wrapper-two {
+                    .calm-logo {
+                        bottom: -190px;
+                        width: 211px;
+                        height: 184px;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+     }
+/* ----------- Samsung note 8 device css and iPhone 13, 12 also  --------------*/
+
+@media only screen and (min-width: 390px) and (max-width: 846px) and (orientation: portrait) {
+
+}
+
+
+
+/* -------------- Media query 1920px ---------------- */
+@media screen and (min-device-width: 1920px) and (max-device-width: 2560px) {
+    .aside{
+        .aside_wrap{
+            h1 {
+                font-size: 45px;
+              
+            }
+            p {
+                font-size: 40px;
+                line-height: 49px;
+            }
+        }
+    }
+    .color_white{
+        color: #fff;
+        
+        &.headtxt{
+            font-size: 40px!important;
+        }
+    }
+
+  
+    .article{
+        .article_wrap{
+            h2 {
+                font-size: 45px;
+            }
+            p {
+                font-size: 33px;
+                line-height: 49px;
+            }
+        }
+    }
+    .header{
+        .menu{
+            .bx-menu {
+                font-size: 65px;
+            }
+        }
+    }
+
+    .container_fluid {
+        padding: 100px 0 0 0;
+    }
+
+    .hamburger {
+        right: 160px;
+        div {
+            width: 70px;
+            height: 12px;
+           
+        }
+        
+    }
+    .nav-links.open {
+        clip-path: inset(0% 0% 0% 0%);
+        -webkit-clip-path: inset(0% 0% 0% 0%);
+        pointer-events: all;
+        height: 100%;
+        width: 100%;
+        
+    }
+   
+    /* .toggle .line1 {
+        transform: rotate(-45deg) translate(-17px, 18px);
+    } */
+
+    .main{
+        .hero{
+            .wrapper-two {
+                .calm-logo{
+                    bottom: -770px;
+                }
+            }
+        }
+    } 
+
+    .founder_section {
+        .found_col2 {
+            p {
+                line-height: 52px;
+                margin-top: 0;
+                font-size: 40px;
+            }
+        }
+    }
+
+    .founder_section {
+        .found_col2 {
+            h6 {
+                font-size: 31px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    .form_section {
+        .row_col {
+            h5 {
+                font-size: 40px;
+                line-height: 40px;
+            }
+        }
+    }
+    .form_section {
+        .row_col {
+            .submit_btn {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .footer {
+        .footer_menu {
+            h6 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .footer {
+        .footer_menu {
+            .col2 {
+                p {
+                    font-size: 30px;
+                    line-height: 36px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer_menu {
+            .col2 {
+                ul {
+                    li {
+                        a {
+                            font-size: 30px;
+                            line-height: 44px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer_menu {
+            .col2 {
+                a {
+                    font-size: 30px;
+                    line-height: 44px;
+                }
+            }
+        }
+    }
+
+    .result {
+        .content_sec {
+            p {
+                font-size: 40px;
+                line-height: 49px;
+            }
+        }
+    }
+
+    .result {
+        .content_sec {
+            h6 {
+                font-size: 26px;
+                line-height: 47px;
+            }
+        }
+    }
+
+    .main {
+        .hero {
+            .wrapper-text {
+                .strach_logo1 {
+                    width: 450px;
+                    height: auto;
+                    margin: 5px;
+                }
+                img {
+                    width: 150px;
+                    height: 150px;
+                    margin: 30px;
+                }
+                .strach_logo {
+                    width: 400px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+
