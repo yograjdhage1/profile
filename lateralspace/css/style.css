@@ -781,3 +781,19 @@
        margin-top: 37%;
     }
 }
+
+.clients {
+    position: relative;
+}
+
+.clients .single-clients img {
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    float: none;
+    padding: 0 35px;
+}
+
+.bg-light {
+    padding: 50px;
+}
