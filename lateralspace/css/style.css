@@ -589,18 +589,18 @@
 
 /*******/
 .text-box{
-    padding: 20px 7% 20px 14%;
+    padding: 2%;
     color: #fff;
     background: #394950;
-    margin-left: -14%;
-    width: 138%;
-    margin-top: 21%;
+    width: 67%;
+    position: absolute;
+    bottom: 0;
+    left: 9%;
 }
 
 .bottom-line{
     border-bottom: 1px solid #394950;
     line-height: 35px;
-    width: 44%;
 }
 
 .overlay-text-cont{
@@ -775,5 +775,13 @@
     }
     .section-3::after {
         height: 100%;
+    }
+    .header-carousel .owl-nav {
+        top: 30%;
+    }
+
+    .text-box {
+        width: 92%;
+        left: 4%;
     }
 }
