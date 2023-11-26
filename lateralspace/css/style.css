@@ -589,13 +589,11 @@
 
 /*******/
 .text-box{
-    padding: 2%;
+    padding:3%;
     color: #fff;
     background: #394950;
-    width: 67%;
-    position: absolute;
-    bottom: 0;
-    left: 9%;
+    width: 100%;
+    margin-top: 21%;
 }
 
 .bottom-line{
@@ -777,11 +775,5 @@
         height: 100%;
     }
     .header-carousel .owl-nav {
-        top: 30%;
-    }
-
-    .text-box {
-        width: 92%;
-        left: 4%;
-    }
+        top: 30%;}
 }
