@@ -751,3 +751,10 @@
     color: #fff;
     background-color: #647a83;
 }
+
+@media screen and (min-width: 375px) {
+
+    .dots::after{
+        display: none;
+    }
+}
