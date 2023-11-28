@@ -30,6 +30,7 @@
  *
  * ------------------------------------------------------------------- 
  */
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 @import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
@@ -66,8 +67,9 @@ html, body {
 }
 body {
 	background: #151515;
-	font-family: "lora-regular", serif;
-	font-size: 1.7rem;
+	/* font-family: "lora-regular", serif; */
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 21px;
 	line-height: 3rem;
 	/* color: #6e6e6e; */
 	color: #8b8585;
@@ -97,7 +99,6 @@ a:hover, a:focus, a:active {
  * ------------------------------------------------------------------- 
  */
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06, .linkcolor {
-	font-family: "poppins-semibold", sans-serif;
 	color: #313131;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -107,7 +108,6 @@ h3, .h03, h4, .h04 {
 	margin-bottom: 1.8rem;
 }
 h5, .h05, h6, .h06 {
-	font-family: "poppins-bold";
 	margin-bottom: 1.2rem;
 }
 h1, .h01 {
@@ -130,11 +130,11 @@ h3, .h03 {
 	line-height: 1.5;
 }
 h4, .h04 {
-	font-size: 1.7rem;
+	font-size: 22px;
 	line-height: 1.765;
 }
 h5, .h05 {
-	font-size: 1.4rem;
+	font-size: 16px;
 	line-height: 1.714;
 	text-transform: uppercase;
 	letter-spacing: .15rem;
@@ -148,28 +148,24 @@ h6, .h06 {
 p img {
 	margin: 0;
 }
-p.lead {
-	font-family: "lora-regular", serif;
-	font-size: 2rem;
-	line-height: 1.8;
-	color: #888888;
+p.lead, .tab-full p {
+	color: #1e1e1e;
 }
+
 @media only screen and (max-width:768px) {
 	p.lead {
 		font-size: 1.7rem;
 	}
 }
 em, i, strong, b {
-	font-size: 1.7rem;
 	line-height: 3rem;
 	font-style: normal;
-	font-weight: normal;
+	font-weight: bold;
 }
 em, i {
 	font-family: "lora-italic", serif;
 }
 strong, b {
-	font-family: "lora-bold", serif;
 }
 small {
 	font-size: 1.2rem;
@@ -648,7 +644,6 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
 	display: inline-block;
-	font-family: "poppins-bold", sans-serif;
 	font-size: 1.4rem;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
@@ -946,11 +941,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: absolute;
 	left: 0;
 	top: -3rem;
-	font-family: "poppins-bold", sans-serif;
 	color: #313131;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
-	font-size: 1.5rem;
+	font-size: 18px;
 	line-height: 2.4rem;
 }
 .skill-bars li .progress {
@@ -1011,7 +1005,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- 
  */
 .grey-section {
-	background: #ebebeb;
+	background: #f5f3f3;
 }
 .grey-section p.lead {
 	color: #7d7d7d;
@@ -1025,15 +1019,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: relative;
 }
 .section-intro h1 {
-	font-family: "poppins-semibold", serif;
-	font-size: 3.6rem;
 	color: #313131;
 	line-height: 1.25;
 	margin-bottom: 1.2rem;
 }
 .section-intro h5 {
 	color: #FEA116;
-	font-size: 1.6rem;
 	line-height: 1.875;
 	margin-bottom: 0.3rem;
 	letter-spacing: .4rem;
@@ -1105,8 +1096,7 @@ header .logo a {
 	margin: 0;
 	padding: 0;
 	color: #ffffff;
-	font-size: 16px;
-	font-family: "poppins-medium", sans-serif;
+	font-size: 18px;
 	width: 115px;
 	/* background: url("../images/logo.png") no-repeat center; */
 	background-size: 92px 15px;
@@ -1209,8 +1199,7 @@ header .logo a {
 #main-nav-wrap {
 	display: block;
 	width: 100%;
-	font-family: "poppins-medium", sans-serif;
-	font-size: 1.5rem;
+	font-size: 22px;
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -1315,7 +1304,6 @@ header .logo a {
 }
 .intro-content h1 {
 	color: #FFFFFF;
-	font-family: "poppins-medium", sans-serif;
 	font-size: 8.4rem;
 	line-height: 1.071;
 	max-width: 900px;
@@ -1328,7 +1316,6 @@ header .logo a {
 }
 .intro-content h5 {
 	color: #FEA116;
-	font-family: "poppins-bold", sans-serif;
 	font-size: 2.3rem;
 	line-height: 1.565;
 	margin-bottom: 0;
@@ -1337,7 +1324,6 @@ header .logo a {
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 .intro-content .intro-position {
-	font-family: "lora-regular", serif;
 	font-size: 1.7rem;
 	line-height: 2.4rem;
 	text-transform: uppercase;
@@ -1512,8 +1498,6 @@ header .logo a {
 	margin-bottom: 3.6rem;
 }
 .about-content h3 {
-	font-family: "poppins-bold", sans-serif;
-	font-size: 1.8rem;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
 }
@@ -1526,18 +1510,16 @@ header .logo a {
 	margin-bottom: .6rem;
 }
 .about-content .info-list li strong {
-	font-family: "poppins-bold", sans-serif;
 	color: #313131;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
-	font-size: 1.5rem;
+	font-size: 16px;
 	line-height: 3rem;
 }
 .about-content .info-list li span {
 	display: block;
-	font-family: "poppins-regular", sans-serif;
-	color: #888888;
-	font-size: 1.5rem;
+	color: #1e1e1e;
+	font-size: 22px;
 	line-height: 1;
 }
 .about-content .skill-bars {
@@ -1673,8 +1655,7 @@ header .logo a {
 	margin-bottom: 0;
 }
 #resume .timeline-header p {
-	font-family: "poppins-regular", sans-serif;
-	font-size: 1.6rem;
+	font-size: 20px;
 	color: #888888;
 }
 #resume .timeline-content {
@@ -1844,8 +1825,7 @@ header .logo a {
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
-	font-family: "poppins-regular", sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	letter-spacing: .1rem;
 	color: rgba(255, 255, 255, 0.6);
 }
@@ -2178,8 +2158,8 @@ header .logo a {
  */
 #stats {
 	background: #FEA116;
-	padding-top: 7.2rem;
-	padding-bottom: 6rem;
+	padding-top: 5.2rem;
+	padding-bottom: 4rem;
 	text-align: center;
 }
 #stats .row {
@@ -2201,7 +2181,6 @@ header .logo a {
 	font-size: 3.6rem;
 	margin-top: 1.2rem;
 	margin-bottom: 0;
-	font-family: "poppins-medium", sans-serif;
 	color: white;
 }
 #stats .stat-title {
@@ -2404,8 +2383,7 @@ header .logo a {
 }
 .contact-info {
 	margin: 4.8rem auto 0;
-	font-family: "poppins-regular", sans-serif;
-	font-size: 1.5rem;
+	font-size: 22px;
 	text-align: center;
 }
 .contact-info .collapse {
@@ -2486,8 +2464,7 @@ header .logo a {
  */
 footer {
 	padding-bottom: 3rem;
-	font-size: 1.4rem;
-	font-family: "poppins-regular", sans-serif;
+	font-size: 18px;
 }
 footer a, footer a:visited {
 	color: #FFFFFF;
@@ -2596,7 +2573,7 @@ footer .copyright span:last-child::after {
 }
 .linkcolor{
 	color: #FEA116 !important; 
-	font-size: 12px!important;
+	font-size: 20px!important;
 }
 .numbercolor a{
 	color: #6e6e6e !important;
