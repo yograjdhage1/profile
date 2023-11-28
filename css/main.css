@@ -127,9 +127,7 @@ p.lead, .tab-full p {
 }
 
 @media only screen and (max-width:768px) {
-	p.lead {
-		font-size: 1.7rem;
-	}
+	
 }
 em, i, strong, b {
 	line-height: 3rem;
@@ -1667,9 +1665,7 @@ header .logo a {
 	#resume .timeline-header h3 {
 		font-size: 1.8rem;
 	}
-	#resume .timeline-header p {
-		font-size: 1.4rem;
-	}
+	
 	#resume .timeline-content {
 		padding-left: 50px;
 	}
@@ -1690,10 +1686,7 @@ header .logo a {
 	#resume .timeline-header h3 {
 		font-size: 2rem;
 	}
-	#resume .timeline-header p {
-		font-size: 1.5rem;
-		margin-bottom: 1.5rem;
-	}
+	
 	#resume .timeline-content {
 		margin: 0;
 	}
