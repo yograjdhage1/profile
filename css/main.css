@@ -916,7 +916,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #313131;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 2.4rem;
 }
 .skill-bars li .progress {
