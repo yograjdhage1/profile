@@ -983,7 +983,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #7d7d7d;
 }
 .section-intro {
-	max-width: 700px;
+	max-width: 790px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -1452,15 +1452,16 @@ header .logo a {
 	margin-left: -30px;
 }
 .intro-info img {
-	height: 9rem;
-	width: 9rem;
-	/* border-radius: 50%; */
-	margin: .9rem 0 0 0;
-	float: left;
+	height: auto;
+    width: 160px;
+    /* border-radius: 50%; */
+    margin: 0 23px 0 0;
+    float: left;
 }
 .intro-info .lead {
 	text-align: left;
-	padding-left: 13rem;
+    padding-left: 0;
+    margin: 0;
 }
 
 .about-content {
@@ -1547,8 +1548,8 @@ header .logo a {
 		margin-top: 3rem;
 	}
 	.intro-info img {
-		height: 6.6rem;
-		width: 6.6rem;
+		height: auto;
+        width: 230px;
 		float: none;
 		display: inline-block;
 	}
