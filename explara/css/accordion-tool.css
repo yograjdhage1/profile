@@ -1,0 +1,74 @@
+
+
+@import "variables";
+@import "mixins";
+@import "breakpoints";
+/* fonts*/
+
+
+ .accordion{
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.24), 0px 1px 1px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    margin-bottom: 16px;
+ }
+ .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion-item {
+    background-color: transparent;
+    border: none;
+}
+.accordion-button::after {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.accordion-button::after {
+    background-image: url(../images/icon-plus.svg);
+    transition: all 0.5s;
+    background-position: center;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/icon-minus.svg);
+    background-position: center;
+}
+.accordion-button {
+    padding: 19px 16px 16px 62px;
+    background-color: transparent;
+    line-height: 28px;
+    font-size: 20px;
+    @include semi;
+    color: #fff;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-body {
+    padding: 0px 16px 16px 61px;
+    font-size: 18px;
+    @include medium;
+}
+.accordion-button::after {
+    transition: all 0.5s;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
