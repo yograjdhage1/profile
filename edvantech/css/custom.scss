@@ -297,7 +297,7 @@
                 line-height: 34px;
                 margin: 0;
                 font-size: 34px;
-                padding-right: 470px;
+                padding-right: 450px;
             }
         }
         .card-1 {
@@ -753,8 +753,8 @@
                     @include Duplet-Regular;
                     color: #303945;
                     position: absolute;
-                    bottom: 0;
-                    width: 70%;
+                    bottom: 18px;
+                    width: 73%;
                 }
                 
             }

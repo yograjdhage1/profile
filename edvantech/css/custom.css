@@ -315,7 +315,7 @@ img {
   line-height: 34px;
   margin: 0;
   font-size: 34px;
-  padding-right: 470px;
+  padding-right: 450px;
 }
 .different .card-1 {
   background-image: url(../images/card_1.png);
@@ -756,8 +756,8 @@ img {
   font-family: "Duplet-Regular";
   color: #303945;
   position: absolute;
-  bottom: 0;
-  width: 70%;
+  bottom: 18px;
+  width: 73%;
 }
 .you_deserve .card-row-2 .card-5 {
   background-image: url(../images/img_2.jpg);
