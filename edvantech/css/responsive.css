@@ -1,0 +1,139 @@
+@media (max-width: 767px) {
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .main_header {
+    position: sticky;
+    background: #fff;
+  }
+  .main_header .navbar-collapse {
+    background: #fff;
+  }
+  .main_header .navbar-brand {
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .main_header .btn-sign-in {
+    width: 50%;
+  }
+  .main_header .btn-blue {
+    width: 50%;
+  }
+  .navbar-toggler {
+    padding: 0;
+    margin-top: 13px;
+  }
+  button:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: 0 0 0 0;
+  }
+  .navbar-nav {
+    padding: 10px 0;
+  }
+  .navbar-nav li {
+    margin-bottom: 10px;
+  }
+  /* .navbar-light .navbar-toggler-icon {
+      filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(7497%) hue-rotate(72deg) brightness(104%) contrast(96%);
+  } */
+  .main_banner .centertxt .banner-txt {
+    font-size: 30px;
+    line-height: 45px;
+    padding: 0px 35px;
+  }
+  #carouselLogos {
+    height: 262px;
+  }
+  .different {
+    padding: 50px 0;
+  }
+  .different .diff-text .title_2 {
+    line-height: 33px;
+    font-size: 24px;
+    padding: 0;
+  }
+  .different .card-1 {
+    margin-bottom: 15px;
+  }
+  .different .card-2 {
+    margin-bottom: 15px;
+  }
+  .different .card-3 {
+    margin-bottom: 15px;
+  }
+  .our_partner {
+    padding: 40px 20px;
+  }
+  .other_solution {
+    padding: 20px;
+  }
+  .other_solution .main-solution {
+    padding: 30px;
+  }
+  .other_solution .main-solution .list {
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+  .other_solution .main-solution .banner_button {
+    margin-bottom: 30px;
+  }
+  .testimonial_cont .main_testimonial {
+    padding: 30px 20px;
+  }
+  .testimonial_cont .main_testimonial .title_2 {
+    font-size: 25px;
+    padding-bottom: 20px;
+    line-height: 25px;
+  }
+  .you_deserve {
+    padding: 40px 10px;
+  }
+  .you_deserve .you_main {
+    display: block;
+    margin-bottom: 25px;
+  }
+  .you_deserve .column_1 {
+    margin-bottom: 14px;
+  }
+  .you_deserve .card-row-2 {
+    margin-bottom: 14px;
+  }
+  .case_study_home .newsColumn {
+    margin-bottom: 17px;
+  }
+  .demo_cont {
+    padding: 40px 0;
+  }
+  .demo_cont .demobg {
+    background-image: url(../images/demo_bg.png);
+    background-repeat: no-repeat;
+    height: 225px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    background-size: cover;
+    margin: 10px;
+    width: 94%;
+  }
+  .footer {
+    padding: 25px 15px;
+  }
+  .footer .foo_col1 h4 {
+    padding-bottom: 10px;
+  }
+  .footer .foo_col1 ul {
+    margin-bottom: 30px;
+  }
+  .footer .foo_col1 ul li {
+    margin-bottom: 10px;
+  }
+  .footer .footer-top-grid .col {
+    padding: 0;
+    margin: 0 0 0 15px;
+    flex: none;
+  }
+  .footer .copyright-content .privacy-policy {
+    text-align: left;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

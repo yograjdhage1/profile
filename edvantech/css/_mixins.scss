@@ -1,0 +1,148 @@
+
+    
+@mixin flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin Duplet-Light {
+    font-family: 'Duplet-Light';
+}
+@mixin Duplet-Regular {
+    font-family: 'Duplet-Regular';
+}
+@mixin Duplet-Semibold { 
+    font-family: 'Duplet-Semibold';
+}
+
+@font-face {
+    font-family: 'Duplet-Light';
+    src: url('../font/Duplet-Light.eot');
+    src: url('../font/Duplet-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/Duplet-Light.woff') format('woff'),
+        url('../font/Duplet-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal; 
+    font-display: swap;
+}
+
+@font-face {  
+    font-family: 'Duplet-Regular';
+    src: url('../font/Duplet-Regular.eot');
+    src: url('../font/Duplet-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Duplet-Regular.woff') format('woff'),
+        url('../font/Duplet-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Duplet-Semibold';
+    src: url('../font/Duplet-Semibold.eot');
+    src: url('../font/Duplet-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Duplet-Semibold.woff') format('woff'),
+        url('../font/Duplet-Semibold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Mulish-Regular';
+    src: url('../font/Mulish-Regular.eot');
+    src: url('../font/Mulish-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Mulish-Regular.woff') format('woff'),
+        url('../font/Mulish-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish-SemiBold';
+    src: url('../font/Mulish-SemiBold.eot');
+    src: url('../font/Mulish-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Mulish-SemiBold.woff') format('woff'),
+        url('../font/Mulish-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@mixin Mulish-Regular { 
+    font-family: 'Mulish-Regular';
+}
+@mixin Mulish-SemiBold { 
+    font-family: 'Mulish-SemiBold';
+}
+
+@mixin upper {
+    text-transform: uppercase;
+}
+
+@mixin regular {
+    font-weight: 400;
+}
+
+@mixin medium {
+    font-weight: 500;
+}
+
+@mixin semi {
+    font-weight: 600;
+}
+
+@mixin bold {
+    font-weight: 700;
+}
+
+@mixin dflex {
+    display: flex;
+}
+
+@mixin underline {
+    text-decoration: underline;
+}
+
+@mixin dfw {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin img-white {
+    filter: brightness(0) invert(1);
+}
+
+@mixin all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@mixin rotate {
+    transform: rotate(180deg);
+}
+
+
+/* @mixin img-green {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(141deg) brightness(102%) contrast(104%);
+}
+@mixin img-white {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(141deg) brightness(102%) contrast(104%);
+}
+@mixin img-blue {
+    filter: brightness(0) saturate(100%) invert(9%) sepia(87%) saturate(5689%) hue-rotate(240deg) brightness(75%) contrast(86%);
+} */ 
